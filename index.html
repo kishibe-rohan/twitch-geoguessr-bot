@@ -4,13 +4,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>GeoBot| Streamer vs Twitch Chat</title>
 </head>
 <body>
     <h1>GeoBot!</h1>
-    <div class"rank-display">
+    
+    <div class="rank-display">
+        <div class="choice">
+            <div class="result">
+              <div class="bar" data-choice="1"></div>
+            </div>
+            <div class="label">
+              <p id="country-1">Country 1</p>
+              <p id="percent-1">Percent 1</p>
+            </div>
+          </div>
+          <div class="choice">
+            <div class="result">
+              <div class="bar" data-choice="2"></div>
+            </div>
+            <div class="label">
+              <p id="country-2">Country 2</p>
+              <p id="percent-2">Percent 2</p>
+            </div>
+          </div>
+          <div class="choice">
+            <div class="result">
+              <div class="bar" data-choice="3"></div>
+            </div>
+            <div class="label">
+              <p id="country-3">Country 3</p>
+              <p id="percent-3">Percent 3</p>
+            </div>
+          </div>
+          <div class="choice">
+            <div class="result">
+              <div class="bar" data-choice="4"></div>
+            </div>
+            <div class="label">
+              <p id="country-4">Country 4</p>
+              <p id="percent-4">Percent 4</p>
+            </div>
+          </div>
+          <div class="choice">
+            <div class="result">
+              <div class="bar" data-choice="5"></div>
+            </div>
+            <div class="label">
+              <p id="country-5">Country 5</p>
+              <p id="percent-5">Percent 5</p>
+            </div>
+          </div>
+        </div>
+
+       
+        <div id="instructions">
+            <h2>Instructions:</h2>
+            <ul>
+                <li>To guess,use command !guess [alpha-3 code of the country] </li>
+                <li>For example: !guess aus to guess Australia</li>
+                <li>1 guess per individual per round</li>
+                <li><a href = "https://www.iban.com/country-codes" >Alpha-3 Codes</a></li>
+            </ul>
+    
+        </div>
       
     </div>
+
+   
+
     <script src="tmi.min.js"></script>
     <script src="index.js"></script>
 </body>

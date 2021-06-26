@@ -402,6 +402,20 @@ const getGuess = (message) => {
     );
 
     var top5 = counts.slice(0, 5);
+    document.getElementById("country-1").innerHTML = top5[0].name;
+    document.getElementById("country-2").innerHTML = top5[1].name;
+    document.getElementById("country-3").innerHTML = top5[2].name;
+    document.getElementById("country-4").innerHTML = top5[3].name;
+    document.getElementById("country-5").innerHTML = top5[4].name;
+
+    var bars = document.getElementsByClassName("bar");
+    for (let i = 0; i < bars.length; i++) {
+      var percentage = (top5[i].count / guessCount) * 100;
+      console.log(percentage);
+      var percent = document.getElementById(`percent-${i + 1}`);
+      percent.innerHTML = percentage.toFixed(2) + "%";
+      bars[i].style.height = percentage.toString() + "%";
+    }
 
     console.log(top5);
   }

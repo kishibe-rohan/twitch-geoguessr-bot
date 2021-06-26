@@ -1,0 +1,74 @@
+body {
+  background-image: url("world1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rank-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 255, 0.3);
+  background-color: beige;
+  color: black;
+}
+
+.choice {
+  height: 400px;
+  display: inline-block;
+  width: 100px;
+}
+
+.result {
+  height: 330px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.bar {
+  height: 0%;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.bar[data-choice="1"] {
+  background-color: red;
+}
+
+.bar[data-choice="2"] {
+  background-color: green;
+}
+
+.bar[data-choice="3"] {
+  background-color: blue;
+}
+
+.bar[data-choice="4"] {
+  background-color: orange;
+}
+
+.bar[data-choice="5"] {
+  background-color: indigo;
+}
+
+.label {
+  height: 70px;
+  text-align: center;
+}
+
+#instructions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  border: 2px solid rgba(0, 0, 255, 0.3);
+  background-color: aquamarine;
+  color: black;
+}
